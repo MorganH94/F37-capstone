@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "recipeTitle": "World Famous Mac and Cheese",
+      "recipeLink": "https://www.momontimeout.com/best-homemade-baked-mac-and-cheese-recipe/",
+      "rating": 4,
+      "imageURL" : "https://www.momontimeout.com/wp-content/uploads/2018/10/homemade-mac-and-cheese-733x1027.jpg"
+    },
+    {
+      "id": 2,
+      "recipeTitle": "Banana Chocolate Chip Muffins",
+      "recipeLink": "https://www.spendwithpennies.com/banana-chocolate-chip-muffins/",
+      "rating": 5,
+      "imageURL" : "https://www.spendwithpennies.com/wp-content/uploads/2020/01/Banana-Chocolate-Chip-Muffins-SpendWithPennies-8.jpg"
+    },
+    {
+      "id": 3,
+      "recipeTitle": "Quick and Simple Bread Recipe",
+      "recipeLink": "https://butterwithasideofbread.com/homemade-bread/",
+      "rating": 3,
+      "imageURL" : "https://butterwithasideofbread.com/wp-content/uploads/2019/01/Best-Homemade-Bread-recipe-22.jpg"
+    }
+  ]

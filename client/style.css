@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: rgb(255, 212, 212);
+  }
+  
+  header {
+    height: 80px; 
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: rgb(52, 21, 161);
+    border-width: 3em;
+    border-style: groove;
+    border-radius: 10px;
+    border-top-color: #16DB93;
+    border-bottom-color: #ce2a97;
+    border-left-color: #EFEA5A;
+    border-right-color: #FE5E41;
+  }
+  
+  main {
+    display: flex; 
+    justify-content: center;
+  }
+  
+  form {
+    width: 550px;
+    height: 450px;
+    background-color: rgb(87, 99, 167);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 30px;
+    border-width: 1em;
+    border-style: groove;
+    border-radius: 10px;
+    border-top-color: #16DB93;
+    border-bottom-color: #ce2a97;
+    border-left-color: #EFEA5A;
+    border-right-color: #FE5E41;
+  }
+  
+  button {
+    background-color: #232323;
+    width: 75px;
+    height: 25px;
+    color: rgb(67, 123, 150);
+    border: none;
+    margin: 5px;
+  }
+  
+  input[type='text'] {
+    width: 85%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #232323;
+    color: #232323;
+    background-color: snow;
+  }
+  
+  #recipeLink-container {
+    width: 50%;
+    height: 50%;
+  }
+  
+  #radio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ratings-container {
+    width: 85%;
+}
+
+    #radio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+  .recipe-cover-image {
+    width: 300px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .recipe-card {
+    background-color: rgb(123, 231, 141);
+    width: 450px;
+    height: 450px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-width: 1em;
+    border-style: groove;
+    border-radius: 10px;
+    border-top-color: #16DB93;
+    border-bottom-color: #ce2a97;
+    border-left-color: #EFEA5A;
+    border-right-color: #FE5E41;
+    
+  }
+  
+  .recipe-recipeTitle {
+    font-size: 50px;
+    margin: 5px 0;
+  }
+  
+  .recipe-recipeLink {
+    font-size: 15px;
+    margin: 5px 0;
+    justify-content: center;
+  }
+
+  .btns-container {
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+  }
+  
+  .btns-container > button {
+    width: 20px;
+  }
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
